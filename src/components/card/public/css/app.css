@@ -102,6 +102,7 @@ section{
     align-items: center;
     display: flex;
     transform: scale(0);
+    transition: 0.5s;
 }
 
 .active-part img{
