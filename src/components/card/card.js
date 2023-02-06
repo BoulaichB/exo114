@@ -6,11 +6,25 @@ import logo2 from './public/img/icon-clock.svg';
 import logo3 from './public/img/icon-view.svg';
 import avatar from './public/img/image-avatar.png';
 
+
+
+// monActive.addEventListener('click', ()=> {
+//     document.getElementsByClassName('active-part')[0].style.transform = 'scale(1)';
+// });
+
 const Card = () => {
+    function active(){
+        const monClic =  document.getElementsByClassName('active-part')[0];
+        if(monClic.style.transform === 'scale(0)'){
+            monClic.style.transform = 'scale(1)';
+        } else{
+            monClic.style.transform = 'scale(0)';
+        }
+    }
     return (
     <section>
         <div className='card'>
-            <div className='card-head'>
+            <div className='card-head' onClick={active}>
                 <img src={equilibrium} alt="equilibrium" />
                 <div className='active-part'>
                     <img src={logo3} alt="view"/>
