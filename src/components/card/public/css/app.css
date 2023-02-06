@@ -1,0 +1,22 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+section{
+    background-color: #0d1a2d;
+    color: white;
+}
+
+.card{
+    background-color: #15273f;
+    width: 20%;
+}
+
+.card-head{
+    width: 90%;
+}
+
+.card-head img{
+    width: 100%;
+}
