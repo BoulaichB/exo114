@@ -115,3 +115,10 @@ section{
 .card-body h3:active, .card-foot .jules:active{
     color: #21f9fa;
 }
+
+@media screen and (max-width: 425px){
+    .card{
+        width: 85% !important;
+        margin: 12% 0 !important;
+    }
+}
