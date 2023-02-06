@@ -3,14 +3,18 @@ import './public/css/app.css';
 import equilibrium from './public/img/image-equilibrium.jpg';
 import logo1 from './public/img/icon-ethereum.svg';
 import logo2 from './public/img/icon-clock.svg';
+import logo3 from './public/img/icon-view.svg';
 import avatar from './public/img/image-avatar.png';
 
 const Card = () => {
-  return (
+    return (
     <section>
         <div className='card'>
             <div className='card-head'>
                 <img src={equilibrium} alt="equilibrium" />
+                <div className='active-part'>
+                    <img src={logo3} alt="view"/>
+                </div>
             </div>
             <div className="card-body">
                 <h3>Equilibrium #3429</h3>
@@ -25,7 +29,7 @@ const Card = () => {
                 <div>
                     <img src={avatar} alt="Random guy"/>
                 </div>
-                <span><span className='creation-of'>Creation of</span> Jules Wyvern</span>
+                <span><span className='creation-of'>Creation of</span> <span class='jules'>Jules Wyvern</span></span>
             </div>
         </div>
         
