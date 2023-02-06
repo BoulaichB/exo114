@@ -15,14 +15,17 @@ const Card = () => {
             <div className="card-body">
                 <h3>Equilibrium #3429</h3>
                 <p>Our Equilibrium collection promotes balance and calm.</p>
-                <span className='Ethereum'><img src={logo1} alt="Ethereum"/> 0.041 ETH</span>
-                <span className='clock'><img src={logo2} alt="Clock"/> 3 days left</span>
+                <div className='span-container'>
+                    <span className='ethereum'><img src={logo1} alt="Ethereum"/> 0.041 ETH</span>
+                    <span className='clock'><img src={logo2} alt="Clock"/> 3 days left</span>
+                </div>
+                
             </div>
             <div className='card-foot'>
                 <div>
                     <img src={avatar} alt="Random guy"/>
                 </div>
-                <span>Creation of Jules Wyvern</span>
+                <span><span className='creation-of'>Creation of</span> Jules Wyvern</span>
             </div>
         </div>
         
